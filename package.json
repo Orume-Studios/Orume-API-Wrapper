@@ -18,10 +18,10 @@
     "url": "git+https://github.com/Orume-Studios/tripay-nodejs.git"
   },
   "keywords": [
-    "tripay",
-    "tripay-wrapper",
-    "tripay-wrapper-nodejs",
-    "tripay-api"
+    "orume-api",
+    "orume-api-wrapper",
+    "orume-api-nodejs",
+    "license-api"
   ],
   "author": {
     "email": "support@orume.id",
