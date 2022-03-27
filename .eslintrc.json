@@ -22,5 +22,6 @@
         "require-jsdoc": "warn",
         "no-mixed-requires": "warn",
         "no-empty-function": "warn"
-    }
+    },
+    "ignorePatterns": ["dist", "node_modules", "tests"]
 }

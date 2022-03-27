@@ -1,16 +1,17 @@
 {
-  "name": "orume-api",
+  "name": "orume-api-wrapper",
   "version": "1.0.0",
   "description": "API Wrapper for Orume API",
   "main": "dist/index.js",
   "scripts": {
-    "test": "node ./tests/test.js",
+    "test": "node ./tests/index.js",
     "build": "tsc --build tsconfig.json",
     "prepare": "husky install",
     "prettify": "npm run lint && npm run format",
     "lint": "eslint src/**/*.ts --fix",
     "watch": "nodemon --watch server --inspect ./index.js",
-    "format": "prettier --config .prettierrc src/**/*.ts --write"
+    "format": "prettier --config .prettierrc src/**/*.ts --write",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",

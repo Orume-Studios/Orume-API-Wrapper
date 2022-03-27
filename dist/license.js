@@ -15,7 +15,7 @@ class LicenseAPI {
     }
     getLicenseByKey(key) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield this.OrumeAPI.fetchURL(`license/key/${key}`, "GET");
+            const response = yield this.OrumeAPI._fetchURL(`license/key/${key}`, "GET");
             return yield response.json();
         });
     }

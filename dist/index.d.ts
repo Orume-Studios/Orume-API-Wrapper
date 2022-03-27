@@ -1,8 +1,10 @@
 import { RequestInit } from "node-fetch";
-import { HTTPMethod } from "./typings/method";
+import { HTTPMethod } from "../typings/method";
+import LicenseAPI from "./license";
 export default class OrumeAPI {
     readonly apiURL: string;
     readonly apiKey: string;
+    readonly license: LicenseAPI;
     constructor(url: string, apiKey?: string);
-    fetchURL(pathURL: string, method: HTTPMethod, init?: RequestInit): Promise<any>;
+    _fetchURL(pathURL: string, method: HTTPMethod, init?: RequestInit): Promise<any>;
 }

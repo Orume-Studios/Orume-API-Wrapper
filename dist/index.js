@@ -13,12 +13,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const node_fetch_1 = __importDefault(require("node-fetch"));
+const license_1 = __importDefault(require("./license"));
 class OrumeAPI {
     constructor(url, apiKey) {
         this.apiURL = url;
         this.apiKey = apiKey;
+        this.license = new license_1.default(this);
     }
-    fetchURL(pathURL, method, init) {
+    _fetchURL(pathURL, method, init) {
         return __awaiter(this, void 0, void 0, function* () {
             if (init == undefined) {
                 init = {};

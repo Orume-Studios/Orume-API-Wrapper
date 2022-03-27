@@ -1,9 +1,15 @@
 import OrumeAPI from ".";
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface LicenseByKeyData {
+import { JSONBodyRequest } from "../typings/http";
+export interface LicenseByKeyResponse extends JSONBodyRequest {
+    data: LicenseByKeyDefaultData;
+}
+export interface LicenseByKeyDefaultData {
+    features: string[];
+    project_authors: string[];
+    project_name: string;
 }
 export default class LicenseAPI {
     private readonly OrumeAPI;
     constructor(OrumeAPI: OrumeAPI);
-    getLicenseByKey(key: string): Promise<LicenseByKeyData>;
+    getLicenseByKey(key: string): Promise<LicenseByKeyResponse | JSONBodyRequest>;
 }
