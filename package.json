@@ -1,6 +1,6 @@
 {
   "name": "orume-api-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "API Wrapper for Orume API",
   "main": "dist/index.js",
   "scripts": {
@@ -10,12 +10,11 @@
     "prettify": "npm run lint && npm run format",
     "lint": "eslint src/**/*.ts --fix",
     "watch": "nodemon --watch server --inspect ./index.js",
-    "format": "prettier --config .prettierrc src/**/*.ts --write",
-    "publish": "npm publish"
+    "format": "prettier --config .prettierrc src/**/*.ts --write"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Orume-Studios/tripay-nodejs.git"
+    "url": "git+https://github.com/Orume-Studios/Orume-API-Wrapper.git"
   },
   "keywords": [
     "orume-api",
@@ -33,9 +32,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Orume-Studios/tripay-nodejs/issues"
+    "url": "https://github.com/Orume-Studios/Orume-API-Wrapper/issues"
   },
-  "homepage": "https://github.com/Orume-Studios/tripay-nodejs#readme",
+  "homepage": "https://github.com/Orume-Studios/Orume-API-Wrapper#readme",
   "dependencies": {
     "node-fetch": "2.0.0"
   },
