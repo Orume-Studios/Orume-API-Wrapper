@@ -1,6 +1,11 @@
 import { RequestInit } from "node-fetch";
-import { HTTPMethod } from "../typings/method";
 import LicenseAPI from "./license";
+export interface OrumeAPIData {
+    code: string;
+    error: boolean;
+    data: unknown;
+}
+export declare type HTTPMethod = "GET" | "POST";
 export default class OrumeAPI {
     readonly apiURL: string;
     readonly apiKey: string;

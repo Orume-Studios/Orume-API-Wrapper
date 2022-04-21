@@ -1,6 +1,6 @@
 {
   "name": "orume-api-node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "API Wrapper for Orume API",
   "main": "dist/index.js",
   "scripts": {

@@ -1,6 +1,5 @@
 import OrumeAPI, { OrumeAPIData } from ".";
 
-
 export interface LicenseByKeyDefaultData extends OrumeAPIData {
   code: string;
   error: boolean;
