@@ -4,9 +4,8 @@ export interface LicenseByKeyDefaultData extends OrumeAPIData {
   code: string;
   error: boolean;
   data: {
-
     project_authors: string[];
-    project_name: string
+    project_name: string;
     project_version: string;
     features: string[];
     featuresLimit: [featureName: number];
