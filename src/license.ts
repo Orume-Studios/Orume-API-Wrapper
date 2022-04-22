@@ -19,8 +19,8 @@ export default class LicenseAPI {
     this.OrumeAPI = OrumeAPI;
   }
 
-  public async getLicenseByKey(key: string): Promise<OrumeAPIData> {
-    const response = await this.OrumeAPI._fetchURL(`license/key/${key}`, "GET");
+  public async verifyLicenseKey(key: string): Promise<OrumeAPIData> {
+    const response = await this.OrumeAPI._fetchURL(`license/verify/${key}`, "GET");
     return await response.json();
   }
 }
